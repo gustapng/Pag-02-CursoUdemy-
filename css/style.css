@@ -1,0 +1,262 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: #fff url(../imagens/fundo.png) repeat-x;
+}
+
+#container {
+    width: 780px;
+    margin: 0 auto;
+
+}
+
+#topo {
+    height: 150px;
+    background: url(../imagens/detalhe-topo.png) no-repeat right top;
+    padding-top: 25px;
+}
+
+.logo {
+    width: 152px;
+    height: 66px;
+    background: url(../imagens/logo.png) no-repeat center;
+    text-indent: -3000px;
+}
+
+/*barra de navegação */
+
+a:link, a:visited {
+    color: #b10333;
+    padding: 2px;
+}
+
+a:hover {
+    color: #e50040;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#topo ul {
+    margin-top: 30px;
+    background: #b10333;
+    float: left;
+}
+
+#topo li {
+    float: left;
+}
+
+#topo ul a {
+    font-size: 0.9em;
+    display: block;
+    padding: 0.5em 1.5em;
+    line-height: 2.1em;
+    text-decoration: none;
+    color: white;
+    background: url(../imagens/divisor.png) no-repeat left center;
+    transition: 0.8s;
+}
+
+#topo ul .primeiro a {
+    background: none;
+}
+
+#topo ul a:hover {
+    background: #69001d;
+}
+
+body.home #navegacao a#home,
+body.brasil #navegacao a#brasil,
+body.internacional #navegacao a#internacional,
+body.economia #navegacao a#economia,
+body.saude #navegacao a#saude,
+body.ciencia #navegacao a#ciencia,
+body.fotos #navegacao a#fotos {
+    color: #fff;
+    background: #de003e;
+    cursor: text;
+}
+
+/* conteudo layout 3 colunas */
+
+#conteudo {
+    margin-top: 60px;
+    background: #f5f5f5;
+}
+
+#lateral {
+    width: 190px;
+    float: left;
+    margin: 0px 0px 20px -780px;
+}
+
+#primario {
+    width: 280px;
+    float: left;
+    margin: 0 0 20px 205px;
+}
+
+#duas-colunas #primario {
+    width: 575px;
+
+}
+
+#uma-coluna #primario {
+    width: 780px;
+    margin: 0px 0px 20px 0px;
+}
+
+#secundario {
+    width: 280px;
+    float: left;
+    margin: 0px 0px 20px 15px;
+}
+
+/* caixa lateral */
+
+.caixa {
+    background: #f3f3f3 url(../imagens/fundo-caixa.png);
+    margin: 10px 0px;
+    padding: 5px;
+}
+
+h2 {
+    font-size: 1.1em;
+    background-color: #294c71;
+    color: #fff;
+    padding: 5px;
+}
+
+.caixa-conteudo {
+    background: #fff;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+/* formatando menu lateral */
+
+#lateral ul a {
+    font: 0.9em;
+    padding: 3px;
+    display: block;
+    line-height: 30px;
+    text-decoration: none;
+    color: #000;
+    border-bottom: 1px solid #e9e9e9;
+}
+
+#lateral ul a:hover {
+    background: #f9f9f9 url(../imagens/marcador.png) no-repeat left center;
+    color: #a1a1a1;
+    padding-left: 23px;
+}
+
+/* formatando formulários */
+
+label {
+    display: block;
+    cursor: pointer;
+}
+
+input {
+    font-size: 0.9em;
+    background-color: #fff;
+    padding: 5px;
+    width: 155px;
+    border: 1px solid black;
+}
+
+input.submit {
+    width: 80px;
+    color: #fff;
+    background-color: #b10333;
+    border: 2px solid #870529;
+    margin-top: 2px;
+    cursor: pointer;
+    transition: 0.6s;
+}
+
+input.submit:hover {
+    background-color: #de003e;
+    border: 2px solid #c50b40;
+}
+
+/* formatando imagens */
+
+img.imagem-principal {
+    width: 98%;
+    border: 3px solid #dfdfdf;
+}
+
+/* formatando cabecalhos */
+
+h3 {
+    text-transform: uppercase;
+    display: inline;
+    font-size: 0.8em;
+    padding: 3px;
+}
+
+.destaque h3 {
+    background: #b10333;
+    color: #fff;
+}
+
+/* formatando listas de notícias */
+
+#lista-noticias li {
+    padding: 2px;
+    border-bottom: 1px solid #ccc;
+    height: 62px;
+}
+
+#lista-noticias li a img {
+    float: left;
+    margin: 5px;
+}
+
+#lista-noticias li a {
+    text-decoration: none;
+}
+
+#lista-noticias li a h3 {
+    font-size: 0.8em;
+    padding: 0;
+    color: #3e7ab9;
+}
+
+#lista-noticias li a p {
+    font-size: 0.7em;
+    color: #000;
+}
+
+#lista-noticias li:hover {
+    background: #eee;
+    cursor: pointer;
+}
+
+/* rodapé */
+
+#container-rodape {
+    background: #294c71;
+    padding: 20px;
+}
+
+#rodape {
+    width: 780px;
+    margin: 0 auto;
+    color: #fff;
+    text-align: center;
+}
+
+h4 a {
+    text-decoration: none; 
+}
